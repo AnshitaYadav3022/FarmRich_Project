@@ -1,0 +1,21 @@
+{
+  "0": {"disease": "Wheat_Powdery_Mildew", "cause": "Fungal infection in humid conditions", "remedy": "Apply sulfur-based fungicides"},
+  "1": {"disease": "Wheat_Leaf_Rust", "cause": "Fungal spores spread by wind", "remedy": "Remove infected leaves and use fungicides"},
+  "2": {"disease": "Wheat_Stripe_Rust", "cause": "Fungal infection", "remedy": "Fungicide spray"},
+  "3": {"disease": "Bacterial_Blight_Wheat", "cause": "Bacterial contamination", "remedy": "Sterilize tools, remove infected parts"},
+  "4": {"disease": "Tomato_Early_Blight", "cause": "Fungal infection", "remedy": "Remove debris, use fungicides"},
+  "5": {"disease": "Tomato_Late_Blight", "cause": "Pathogen thrives in humid conditions", "remedy": "Resistant varieties, protective fungicides"},
+  "6": {"disease": "Tomato_Septoria_Leaf_Spot", "cause": "Fungal infection", "remedy": "Remove infected leaves, fungicide"},
+  "7": {"disease": "Tomato_Mosaic_Virus", "cause": "Viral infection", "remedy": "Remove infected plants, sterilize tools"},
+  "8": {"disease": "Potato_Late_Blight", "cause": "Fungal infection", "remedy": "Use resistant varieties"},
+  "9": {"disease": "Potato_Early_Blight", "cause": "Fungal infection", "remedy": "Crop rotation and fungicides"},
+  "10": {"disease": "Potato_Black_Scurf", "cause": "Fungal infection", "remedy": "Use certified seed potatoes"},
+  "11": {"disease": "Potato_Leaf_Roll_Virus", "cause": "Viral infection spread by insects", "remedy": "Remove infected plants"},
+  "12": {"disease": "Rice_Brown_Spot", "cause": "Fungal infection", "remedy": "Fungicide and proper spacing"},
+  "13": {"disease": "Rice_Blast", "cause": "Fungal infection", "remedy": "Resistant varieties, remove debris"},
+  "14": {"disease": "Rice_Bacterial_Leaf_Blight", "cause": "Bacterial infection", "remedy": "Avoid contaminated water"},
+  "15": {"disease": "Wheat_Healthy", "cause": "No disease detected", "remedy": "No action needed"},
+  "16": {"disease": "Tomato_Healthy", "cause": "No disease detected", "remedy": "No action needed"},
+  "17": {"disease": "Potato_Healthy", "cause": "No disease detected", "remedy": "No action needed"},
+  "18": {"disease": "Rice_Healthy", "cause": "No disease detected", "remedy": "No action needed"}
+}
