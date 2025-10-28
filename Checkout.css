@@ -1,0 +1,277 @@
+.checkout-page {
+  padding: 40px 20px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.checkout-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 28px;
+}
+
+.checkout-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.checkout-section {
+  margin-bottom: 30px;
+}
+
+.checkout-section h2 {
+  margin-bottom: 15px;
+  color: #222;
+  font-size: 20px;
+}
+
+/* ---------- Cart Summary ---------- */
+.summary-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.summary-item img {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.summary-item div {
+  flex: 1;
+  min-width: 140px;
+}
+
+.summary-item p {
+  margin: 0;
+  font-weight: 500;
+  color: #333;
+}
+
+.summary-item span {
+  font-size: 14px;
+  color: #666;
+}
+
+.item-total {
+  font-weight: 600;
+  color: #111;
+}
+
+.summary-total {
+  border-top: 1px solid #ddd;
+  padding-top: 12px;
+  margin-top: 15px;
+}
+
+.summary-total div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.total-line {
+  font-size: 18px;
+  color: #111;
+  font-weight: 700;
+}
+
+.savings {
+  color: #16a34a;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* ---------- Address ---------- */
+.address-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.address-form input:focus {
+  border-color: #16a34a;
+  outline: none;
+}
+
+/* ---------- Payment ---------- */
+.payment-options label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+/* ---------- Button ---------- */
+.place-order-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.place-order-btn:hover {
+  background: #15803d;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .checkout-container {
+    padding: 20px;
+  }
+
+  .summary-item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .summary-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .place-order-btn {
+    font-size: 16px;
+  }
+}
+/* ---------- Success Popup ---------- */
+.success-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 25px 35px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  animation: scaleUp 0.3s ease-out;
+}
+
+.success-icon {
+  font-size: 48px;
+  color: #16a34a;
+  margin-bottom: 10px;
+}
+
+.popup-content h3 {
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.popup-content p {
+  color: #555;
+  font-size: 15px;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* ---------- Success Popup ---------- */
+.success-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 25px 35px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  animation: scaleUp 0.3s ease-out;
+}
+
+.success-icon {
+  font-size: 48px;
+  color: #16a34a;
+  margin-bottom: 10px;
+}
+
+.popup-content h3 {
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.popup-content p {
+  color: #555;
+  font-size: 15px;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

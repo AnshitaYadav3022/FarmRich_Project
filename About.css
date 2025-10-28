@@ -1,0 +1,132 @@
+/* Full-page background */
+.about-page { position: relative; min-height: 100vh; font-family: sans-serif; }
+.bg-image {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+  z-index: -1;
+}
+
+/* Hero section */
+.hero { 
+  text-align: center; /* center alignment */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  padding: 4rem 2rem; 
+  color: #fff; 
+}
+.hero-title { font-size: 3rem; margin-bottom: 1.5rem; text-shadow: 2px 2px 12px rgba(245, 240, 240, 0.5); }
+.hero-text p { margin-bottom: 1rem; line-height: 1.6; text-align: center; } /* text centered */
+
+/* Flashcards */
+.cards-section { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding: 2rem 1rem; }
+.anim-card { 
+  background: rgba(255,255,255,0.12); 
+  backdrop-filter: blur(8px); 
+  border-radius: 15px; 
+  padding: 1.5rem; 
+  width: 250px; 
+  color: #fff; 
+  text-align: center; /* center alignment */ 
+  transform: translateY(30px); 
+  opacity: 0; 
+  transition: all 0.6s ease; 
+}
+.anim-card.visible { transform: translateY(0); opacity: 1; }
+.card-icon { font-size: 2.5rem; margin-bottom: 0.8rem; }
+
+/* Stats */
+.stats-section { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding: 2rem 1rem; }
+.stat-card { 
+  background: rgba(255,255,255,0.12); 
+  padding: 1.5rem; 
+  border-radius: 15px; 
+  text-align: center; /* center alignment */ 
+  color: #fff; 
+  width: 180px; 
+  transform: translateY(30px); 
+  opacity: 0; 
+  transition: all 0.6s ease; 
+}
+.stat-card.visible { transform: translateY(0); opacity: 1; }
+.stat-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+.stat-number { font-size: 1.8rem; font-weight: bold; }
+.stat-label { font-size: 0.95rem; margin-top: 0.3rem; }
+
+/* Mission/Vision/Values */
+.mvv-section { text-align: center; margin: 3rem auto; padding: 2rem 1rem; }
+.mvv-cards { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+.mvv-card { 
+  flex: 1 1 220px; 
+  background: rgba(255,255,255,0.15); 
+  padding: 1.5rem; 
+  border-radius: 15px; 
+  color: #fff; 
+  backdrop-filter: blur(10px); 
+  transition: transform 0.3s ease; 
+  text-align: center; /* center alignment */ 
+}
+.mvv-card:hover { transform: translateY(-8px); }
+
+/* Timeline */
+.timeline-section { text-align: center; margin: 3rem auto; padding: 1rem; }
+.timeline { list-style: none; padding: 0; margin: 2rem 0; position: relative; text-align: center; } /* center timeline */
+.timeline::before { content:""; position:absolute; top:0; left:50%; width:3px; height:100%; background:#4caf50; transform:translateX(-50%); }
+.timeline li { position: relative; width:50%; padding:1rem; background: rgba(255,255,255,0.1); border-radius:10px; color:#fff; margin-bottom:2rem; text-align: center; } /* center text */
+.timeline li:nth-child(odd) { left:0; }
+.timeline li:nth-child(even) { left:50%; }
+.timeline .year { font-weight:bold; color:#ffb300; margin-bottom:0.3rem; }
+
+/* FAQ */
+.faq-section { margin:3rem auto; padding:2rem 1rem; max-width:900px; text-align: center; }
+.faq-item { margin-bottom:1.5rem; border-radius:12px; overflow:hidden; background: rgba(255,255,255,0.15); color:#fff; }
+.faq-question { padding:1rem; cursor:pointer; font-weight:bold; background: rgba(255,255,255,0.2); text-align: center; } /* center question */
+.faq-answer { max-height:0; overflow:hidden; transition:max-height 0.4s ease, padding 0.4s ease; padding:0 1rem; text-align: center; } /* center answer */
+.faq-item.active .faq-answer { max-height:300px; padding:1rem; }
+
+/* CTA */
+.cta-section {
+  text-align: center;
+  margin: 3rem auto;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  border-radius: 20px;
+  color: #fff;
+}
+
+.cta-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.cta-section p {
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  background: #81c784;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  background: #81c784;
+}
+
+
+/* Animations */
+.section-heading { font-size:2.2rem; font-weight:bold; text-align:center; margin:2rem 0; color:white; font-style:italic; }
