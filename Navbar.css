@@ -1,0 +1,77 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;        /* horizontal padding */
+  height: 50px;            /* reduced height */
+  background-color: #1ac523;
+  color: white;
+  font-size: 16px;         /* larger font size for links */
+  width: 100%;             /* full width for desktop */
+  box-sizing: border-box;
+}
+
+.navbar .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;       /* increased font */
+  transition: none;      /* remove hover transition */
+}
+
+/* Remove hover color change */
+.nav-links li a:hover {
+  color: white;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22px;
+  height: 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.bar {
+  height: 2.5px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Responsive for small screens */
+@media screen and (max-width: 900px) {
+  .nav-links {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #174d2e;
+    flex-direction: column;
+    width: 180px;
+    padding: 1rem;
+    transform: translateX(100%);
+    border-radius: 8px 0 0 8px;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+}
